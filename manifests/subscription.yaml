@@ -2,10 +2,10 @@ apiVersion: operators.coreos.com/v1alpha1
 kind: Subscription
 metadata:
   name: quay
-  namespace: openshift-operators # or operators
+  namespace: operators
 spec:
   channel: unavailable-image-upgrade  # or working-upgrade for successful upgrades
-  installPlanApproval: Automatic
+  installPlanApproval: Manual
   name: quay
   source: alex-operators
   sourceNamespace: openshift-marketplace # or olm

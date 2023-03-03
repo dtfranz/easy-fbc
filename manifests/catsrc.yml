@@ -2,9 +2,9 @@ apiVersion: operators.coreos.com/v1alpha1
 kind: CatalogSource
 metadata:
   name: alex-operators
-  namespace: openshift-marketplace # or olm
+  namespace: olm # or olm
 spec:
-  image: quay.io/agreene/index:quay
+  image: quay.io/rh_ee_dfranz/index:testing
   displayName: Alex Operators
   priority: -100
   publisher: Alex
